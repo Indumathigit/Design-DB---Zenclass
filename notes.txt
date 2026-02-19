@@ -1,0 +1,292 @@
+use zenclass
+switched to db zenclass
+db.users.insertMany([{"id": 1, "name":"Indu", "codekata_solved": 50, "email": "indu@mail.com"} {"id": 2, "name":"Yazh", "codekata_solved": 100, "email": "yazh@mail.com"}, {"id": 3, "name":"aadhvi", "codekata_solved": 120, "email": "aadhvi@mail.com"}, {"id": 4, "name":"Joe", "codekata_solved": 80, "email": "Joe@mail.com"}, {"id": 5, "name":"Apple", "codekata_solved": 200, "email": "apple@mail.com"}, ]);
+SyntaxError: Unexpected token, expected "," (1:95)
+
+> 1 | db.users.insertMany([{"id": 1, "name":"Indu", "codekata_solved": 50, "email": "indu@mail.com"} {"id": 2, "name":"Yazh", "codekata_solved": 100, "email": "yazh@mail.com"}, {"id": 3, "name":"aadhvi", "codekata_solved": 120, "email": "aadhvi@mail.com"}, {"id": 4, "name":"Joe", "codekata_solved": 80, "email": "Joe@mail.com"}, {"id": 5, "name":"Apple", "codekata_solved": 200, "email": "apple@mail.com"}, ]);
+    |                                                                                                ^
+db.users.insertMany([{"id": 1, "name":"Indu", "codekata_solved": 50, "email": "indu@mail.com"}, {"id": 2, "name":"Yazh", "codekata_solved": 100, "email": "yazh@mail.com"}, {"id": 3, "name":"aadhvi", "codekata_solved": 120, "email": "aadhvi@mail.com"}, {"id": 4, "name":"Joe", "codekata_solved": 80, "email": "Joe@mail.com"}, {"id": 5, "name":"Apple", "codekata_solved": 200, "email": "apple@mail.com"}, ]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6996cfcfc6ba6b197af32cf9'),
+    '1': ObjectId('6996cfcfc6ba6b197af32cfa'),
+    '2': ObjectId('6996cfcfc6ba6b197af32cfb'),
+    '3': ObjectId('6996cfcfc6ba6b197af32cfc'),
+    '4': ObjectId('6996cfcfc6ba6b197af32cfd')
+  }
+}
+db.tasks.insertMany([{ "Task_name":"To do list", "date": "2020-10-23"}, 
+                     { "Task_name":"Calculator", "date": "2020-08-09"}, 
+                     { "Task_name":"Ticket Booking APP", "date": "2020-10-13"}, 
+                     { "Task_name":"Game XO XO", "date": "2020-10-05"},
+                     { "Task_name":"Landing PAge", "date": "2020-09-29"}, ]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6996d000c6ba6b197af32cfe'),
+    '1': ObjectId('6996d000c6ba6b197af32cff'),
+    '2': ObjectId('6996d000c6ba6b197af32d00'),
+    '3': ObjectId('6996d000c6ba6b197af32d01'),
+    '4': ObjectId('6996d000c6ba6b197af32d02')
+  }
+}
+db.topics.insertMany([ { "topic": "HTML", "date": "2020-10-05" },
+                       { "topic": "CSS", "date": "2020-10-12" }, 
+                       { "topic": "JavaScript", "date": "2020-09-25" },
+                       { "topic": "React", "date": "2020-11-02" },
+                       { "topic": "MongoDB", "date": "2020-11-15" } ]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6996d015c6ba6b197af32d03'),
+    '1': ObjectId('6996d015c6ba6b197af32d04'),
+    '2': ObjectId('6996d015c6ba6b197af32d05'),
+    '3': ObjectId('6996d015c6ba6b197af32d06'),
+    '4': ObjectId('6996d015c6ba6b197af32d07')
+  }
+}
+db.mentors.insertMany([ { "Mentor_name": "Siddhu", "mentee_count": 25 },
+                        { "Mentor_name": "Raghav", "mentee_count": 12 }, 
+                        { "Mentor_name": "Priya", "mentee_count": 30 }, 
+                        { "Mentor_name": "Antony", "mentee_count": 20 }, 
+                        { "Mentor_name": "Deepak", "mentee_count": 18 } ]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6996d025c6ba6b197af32d08'),
+    '1': ObjectId('6996d025c6ba6b197af32d09'),
+    '2': ObjectId('6996d025c6ba6b197af32d0a'),
+    '3': ObjectId('6996d025c6ba6b197af32d0b'),
+    '4': ObjectId('6996d025c6ba6b197af32d0c')
+  }
+}
+db.company_drives.insertMany([ { "drive_name": "Guvi", "drive_date": "2020-10-10", "id": 1 }, 
+                               { "drive_name": "TCS", "drive_date": "2020-10-18", "id": 2 },
+                               { "drive_name": "Amazon", "drive_date": "2020-10-25", "id": 3 },
+                               { "drive_name": "Zoho", "drive_date": "2020-10-28", "id": 4 },
+                               { "drive_name": "HCL", "drive_date": "2020-11-05", "id": 5 } ]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6996d076c6ba6b197af32d0d'),
+    '1': ObjectId('6996d076c6ba6b197af32d0e'),
+    '2': ObjectId('6996d076c6ba6b197af32d0f'),
+    '3': ObjectId('6996d076c6ba6b197af32d10'),
+    '4': ObjectId('6996d076c6ba6b197af32d11')
+  }
+}
+db.attendance.insertMany([ { "id": 1, "date": "2020-10-16", "status": "absent", "task_submitted": "no" }, 
+                           { "id": 2, "date": "2020-10-20", "status": "present", "task_submitted": "yes" }, 
+                           { "id": 3, "date": "2020-10-22", "status": "absent", "task_submitted": "no" },
+                           { "id": 4, "date": "2020-10-25", "status": "present", "task_submitted": "no" }, 
+                           { "id": 5, "date": "2020-10-30", "status": "absent", "task_submitted": "no" } ]);
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6996d08bc6ba6b197af32d12'),
+    '1': ObjectId('6996d08bc6ba6b197af32d13'),
+    '2': ObjectId('6996d08bc6ba6b197af32d14'),
+    '3': ObjectId('6996d08bc6ba6b197af32d15'),
+    '4': ObjectId('6996d08bc6ba6b197af32d16')
+  }
+}
+//Topics thought in october
+db.topics.find({})
+{
+  _id: ObjectId('6996d015c6ba6b197af32d03'),
+  topic: 'HTML',
+  date: '2020-10-05'
+}
+{
+  _id: ObjectId('6996d015c6ba6b197af32d04'),
+  topic: 'CSS',
+  date: '2020-10-12'
+}
+{
+  _id: ObjectId('6996d015c6ba6b197af32d05'),
+  topic: 'JavaScript',
+  date: '2020-09-25'
+}
+{
+  _id: ObjectId('6996d015c6ba6b197af32d06'),
+  topic: 'React',
+  date: '2020-11-02'
+}
+{
+  _id: ObjectId('6996d015c6ba6b197af32d07'),
+  topic: 'MongoDB',
+  date: '2020-11-15'
+}
+//Topics thought in october
+db.topics.find({
+  date :{ $gt: "2020-10-01", $lt:"2020-10-31"}
+});
+{
+  _id: ObjectId('6996d015c6ba6b197af32d03'),
+  topic: 'HTML',
+  date: '2020-10-05'
+}
+{
+  _id: ObjectId('6996d015c6ba6b197af32d04'),
+  topic: 'CSS',
+  date: '2020-10-12'
+}
+//Topics thought in october
+db.tasks.find({
+  date :{ $gt: "2020-10-01", $lt:"2020-10-31"}
+});
+{
+  _id: ObjectId('6996d000c6ba6b197af32cfe'),
+  Task_name: 'To do list',
+  date: '2020-10-23'
+}
+{
+  _id: ObjectId('6996d000c6ba6b197af32d00'),
+  Task_name: 'Ticket Booking APP',
+  date: '2020-10-13'
+}
+{
+  _id: ObjectId('6996d000c6ba6b197af32d01'),
+  Task_name: 'Game XO XO',
+  date: '2020-10-05'
+}
+//all the company drives which appeared between 15 oct-2020 and 31-oct-2020
+db.company_drives.find({ drive_date: { $gte: "2020-10-15", $lte: "2020-10-31" } 
+                       });
+{
+  _id: ObjectId('6996d076c6ba6b197af32d0e'),
+  drive_name: 'TCS',
+  drive_date: '2020-10-18',
+  id: 2
+}
+{
+  _id: ObjectId('6996d076c6ba6b197af32d0f'),
+  drive_name: 'Amazon',
+  drive_date: '2020-10-25',
+  id: 3
+}
+{
+  _id: ObjectId('6996d076c6ba6b197af32d10'),
+  drive_name: 'Zoho',
+  drive_date: '2020-10-28',
+  id: 4
+}
+db.company_drives.aggregate([
+  {
+    $lookup: {
+      from: "users",
+      localField: "id",
+      foreignField: "id",
+      as: "student"
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      drive_name: 1,
+      drive_date: 1,
+      "student.name": 1
+    }
+  }
+])
+{
+  drive_name: 'Guvi',
+  drive_date: '2020-10-10',
+  student: [
+    {
+      name: 'Indu'
+    }
+  ]
+}
+{
+  drive_name: 'TCS',
+  drive_date: '2020-10-18',
+  student: [
+    {
+      name: 'Yazh'
+    }
+  ]
+}
+{
+  drive_name: 'Amazon',
+  drive_date: '2020-10-25',
+  student: [
+    {
+      name: 'aadhvi'
+    }
+  ]
+}
+{
+  drive_name: 'Zoho',
+  drive_date: '2020-10-28',
+  student: [
+    {
+      name: 'Joe'
+    }
+  ]
+}
+{
+  drive_name: 'HCL',
+  drive_date: '2020-11-05',
+  student: [
+    {
+      name: 'Apple'
+    }
+  ]
+}
+//Find the number of problems solved by the user in codekata
+db.users.find({}, { name: 1, codekata_solved: 1 });
+{
+  _id: ObjectId('6996cfcfc6ba6b197af32cf9'),
+  name: 'Indu',
+  codekata_solved: 50
+}
+{
+  _id: ObjectId('6996cfcfc6ba6b197af32cfa'),
+  name: 'Yazh',
+  codekata_solved: 100
+}
+{
+  _id: ObjectId('6996cfcfc6ba6b197af32cfb'),
+  name: 'aadhvi',
+  codekata_solved: 120
+}
+{
+  _id: ObjectId('6996cfcfc6ba6b197af32cfc'),
+  name: 'Joe',
+  codekata_solved: 80
+}
+{
+  _id: ObjectId('6996cfcfc6ba6b197af32cfd'),
+  name: 'Apple',
+  codekata_solved: 200
+}
+//Find all the mentors with who has the mentee's count more than 15
+db.mentors.find({ mentee_count: { $gt: 15 } });
+{
+  _id: ObjectId('6996d025c6ba6b197af32d08'),
+  Mentor_name: 'Siddhu',
+  mentee_count: 25
+}
+{
+  _id: ObjectId('6996d025c6ba6b197af32d0a'),
+  Mentor_name: 'Priya',
+  mentee_count: 30
+}
+{
+  _id: ObjectId('6996d025c6ba6b197af32d0b'),
+  Mentor_name: 'Antony',
+  mentee_count: 20
+}
+{
+  _id: ObjectId('6996d025c6ba6b197af32d0c'),
+  Mentor_name: 'Deepak',
+  mentee_count: 18
+}
+//Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
+db.attendance.find({date: { $gte: "2020-10-15", $lte: "2020-10-31" },status: "absent",task_submitted: "no"}).count();
+3
+zenclass
+
+
